@@ -19,3 +19,4 @@ app.use( '/api/movies' ,require('./routes/movies'));
 app.listen(app.get('port') , () => {
     console.log('Server listen in port ' + app.get('port'));
 });
+
