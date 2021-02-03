@@ -3,7 +3,7 @@ const router = Router();
 
 
 router.get('/' , (request , response) => {
-    response.json({"Title" : "Hola"});
+    response.json({"Hello" : "Nothing to show"});
 });
 
 router.get('/test' , (request , response) => {

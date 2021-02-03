@@ -12,7 +12,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 //routes
-app.use(require('./routes/routes'));
+app.use('api/' , require('./routes/routes'));
 app.use( '/api/movies' ,require('./routes/movies'));
 
 //Starting server
