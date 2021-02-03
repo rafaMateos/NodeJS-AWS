@@ -1,0 +1,13 @@
+[
+    {
+        "id" : 1,
+        "title" : "Harry potter",
+        "principal_Actor" : "Daniel" 
+    } ,
+
+    {
+        "id" : 2,
+        "title" : "Alien",
+        "principal_Actor" : "Scare" 
+    }
+]
