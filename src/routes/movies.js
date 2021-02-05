@@ -1,14 +1,10 @@
 const{ Router, request, response } = require('express');
 const router = Router();
 const data = require('../data/data.json');
-const DBConection = require('../mysql/DB_Connection');
 
 //routes
 router.get('/' , (request , response) => {
-    getAllMovies(function(result){
-    response.json(result);
-    });
- 
+    response.json(data);
 });
 
 router.post('/' , (request , response) => {
@@ -24,21 +20,5 @@ router.post('/' , (request , response) => {
         response.send('Not valid JSON');
     }
 });
-
-function getAllMovies(callback){
-    var query = DBConection.query('select id , title , principal_Actor from movies;', function(error, data){
-        if(error){
-           throw error;
-        }else{
-            var result = data;
-           if(result.length > 0){
-                callback(result);
-           }else{
-                callback('not found');
-           }
-        }
-     }
-    );
-}
 
 module.exports = router;
