@@ -9,5 +9,10 @@
         "id" : 2,
         "title" : "Alien",
         "principal_Actor" : "Scare" 
+    },
+    {
+        "id" : 3,
+        "title" : "Soy leyenda",
+        "principal_Actor" : "Will" 
     }
 ]
